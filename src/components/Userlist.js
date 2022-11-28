@@ -12,7 +12,7 @@ export class Userlist extends React.Component {
 
   render() {
     return (
-      <ul style={{marginLeft: '2em', fontSize: '1.5em'}}>
+      <ul>
         {this.props.usernames.map((username) => (
           <li key={username}>
             <button data-username={username} onClick={this.handleClick}>

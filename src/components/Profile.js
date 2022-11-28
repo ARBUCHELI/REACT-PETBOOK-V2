@@ -65,10 +65,10 @@ export class Profile extends React.Component {
           {!isLoading && (<img src={this.state.userData.profilePictureUrl} alt="" />)}
         </div>
         <div className="profile-body">
-          <h2 style={{fontSize: '2em'}}>{name}</h2>
+          <h2>{name}</h2>
           <h3 style={{color: '#3b5998'}}>@{this.props.username}</h3>
-          <p style={{fontSize: '1.5em'}}>{bio}</p>
-          <h3 style={{fontSize: '2em'}}>My friends</h3>
+          <p>{bio}</p>
+          <h3>My friends</h3>
           <Userlist usernames={friends} onChoose={this.props.onChoose} />
         </div>
       </div>

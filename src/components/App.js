@@ -39,7 +39,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header style={{marginTop: '2em', borderRadius: '10px'}}>
-          <h1 style={{marginLeft: '1em', fontSize: '3em', color: 'white'}}>PetBook</h1>
+          <h1>PetBook</h1>
           <nav>
             {this.state.currentUsername && (
               <button className="GoDirectory" onClick={this.handleReturnToDirectoryClick} style={{backgroundColor: 'white', borderRadius: '5px', marginRight: '1em', padding: '0.5em 1em 0.5em 1em', fontWeight: 'bold', color: '#3b5998'}}>
@@ -50,9 +50,7 @@ class App extends React.Component {
         </header>
         <main>{body}</main>
         <footer>
-          <p>Author: ANDRES R. BUCHELI</p>
-          <p>Bucheli Web Development ©</p>
-          <p><a href="radio_seattle@hotmail.com">radio_seattle@hotmail.com</a></p>
+          <p><a href="https://bucheli-web-personal-portfolio-website.netlify.app/index.html" rel="noopener noreferrer" target="_blank">Bucheli Web © Development</a></p>
         </footer>
       </div>
     );
